@@ -4,7 +4,7 @@ A bare-metal STM32 motor controller implementing real-time PI speed control with
 hardware quadrature encoder feedback, exposed to the ROS 2 ecosystem through a
 serial bridge. Commanded and monitored over standard ROS 2 topics.
 
-![Demo](docs/demo.gif)
+![Demo](docs/project_demo.gif)
 
 ---
 
@@ -62,7 +62,7 @@ settling to the setpoint with no residual offset.
 
 ### P-only vs PI: steady-state error
 
-![P vs PI comparison](docs/comparison.png)
+![P vs PI comparison](docs/P_only_comparison_step_response.png)
 
 The same motor under an identical 0→setpoint step, with and without the integral
 term. Proportional control alone settles well below the target (the classic
